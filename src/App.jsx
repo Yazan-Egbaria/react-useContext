@@ -1,5 +1,12 @@
+import { ButtonColorProvider } from "./context/ButtonColor.context";
+import Home from "./pages/Home";
+
 export default function App() {
   return (
-    <h1 className="bg-gray-50 text-3xl font-bold underline">Hello world!</h1>
+    <div className="flex h-screen w-full">
+      <ButtonColorProvider>
+        <Home />
+      </ButtonColorProvider>
+    </div>
   );
 }
